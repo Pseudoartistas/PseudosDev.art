@@ -48,7 +48,7 @@ export const metadata = {
         color: '#171717'
       },
     ],
-  },
+  },/* 
   openGraph: {
     type: 'website',
     url: 'https://pseudos.art',
@@ -58,7 +58,7 @@ export const metadata = {
       { url: '/media/img/background/base.jpg', alt: 'Texto Alternativo da Imagem' },
     ],
     site_name: 'Coletivo de Pseudoartistas',
-  },
+  }, */
 };
 
 

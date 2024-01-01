@@ -4,12 +4,18 @@ import React, { useState, useEffect } from 'react';
 import * as Icons from './icons';
 
 export function ThemeBtn({...props}) {
-	var initTheme = (typeof window.localStorage !== 'undefined' && window.localStorage.getItem('theme')) ? window.localStorage.getItem('theme') : (typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+/* 	var initTheme = (typeof window.localStorage !== 'undefined' && 
+                            window.localStorage.getItem('theme')) ? 
+                            window.localStorage.getItem('theme') :
+                            (typeof window !== 'undefined' &&
+                            window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light'; */
+    var initTheme = 'light';
+                            
 	const [theme, setTheme] = useState(initTheme);
 
 	const toggleTheme = () => {
 		const newTheme = theme === 'light' ? 'dark' : 'light';
-		window.window.localStorage.setItem('theme', newTheme);
+		window.localStorage.setItem('theme', newTheme);
 		setTheme(newTheme);
 	};
 
