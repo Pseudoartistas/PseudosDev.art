@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.lora {
+  font-family: var(--lora);
+}
+
 .current {
   @apply font-black bg-black/[.05] dark:bg-white/[.05]
 }

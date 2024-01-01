@@ -33,7 +33,7 @@ export function MenuHamburguer({ ...props }) {
 				</button>
 			</Popover.Trigger>
 			<Popover.Portal>
-				<Popover.Content className="z-40 flex h-screen w-screen flex-col items-center gap-5 px-5 py-5 text-sm colorsBase relative -top-[58px] md:!-top-0 !bg-orange-500">
+				<Popover.Content className="z-40 flex h-screen w-screen flex-col items-center gap-5 px-5 py-5 text-sm colorsBase relative -top-[58px] md:!-top-0">
                     <div className='flex flex-row justify-between items-center w-full pb-5'>
                         <Popover.Close className="h-8 w-8 invisible" aria-label="Close">
                             <Icons.CloseAni/>
@@ -75,10 +75,11 @@ export function MenuHamburguer({ ...props }) {
                     </div>
 
                     <div className=" flex h-64 w-2/3 flex-col items-start justify-end rounded-lg">
-						<a href="/" className="flex h-full w-full flex-col justify-end rounded-lg bg-gradient-to-b from-muted/50 to-muted p-5 max-md:pointer-events-none">
-							<Logos.LogoANotaVH />
-							<span className="line-clamp-2 w-2/3 text-sm font-bold">A Nota</span>
-							<p className="line-clamp-3 w-2/3 text-xs">Projeto de divulgação poética e cultural com cartazes em lambe-lambe.</p>
+					<span className='flex flex-row w-full items-center justify-center font-light text-base py-2'>Destaque:</span>
+						<a href="/" className="flex flex-col justify-end items-start rounded-lg from-neutral-300 to-neutral-200 bg-gradient-to-b from-muted/50 to-muted p-5 max-md:pointer-events-none">
+							<Logos.LogoPseudoVH />
+							<span className="text-sm line-clamp-2 w-2/3 font-bold">Manifesto do coletivo</span>
+							<p className="text-xs line-clamp-3 w-2/3">O coletivo de arte "Pseudoartistas" surge como uma resposta à necessidade urgente de redefinir e expandir a compreensão da arte em uma pequena cidade do interior. Em um contexto de modernidade líquida e resistência às formas de arte que desafiam as crenças estabelecidas, o coletivo busca promover a diversidade artística, a reflexão crítica e a transformação social através da colaboração mútua, intervenções artísticas, oficinas de arte e diálogo social. Com um manifesto artístico que desafia as convenções e valoriza a expressão criativa, o coletivo busca criar um ambiente cultural inclusivo e empoderar artistas de todas as modalidades.</p>
 						</a>
 					</div>
 				</Popover.Content>
