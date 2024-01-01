@@ -75,13 +75,13 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="Coletivo de Pseudoartistas | Floresta Azul - BA" />
         <meta property="og:description" content="O site oficial do primeiro coletivo de artes de Floresta Azul." />
         <meta property="og:url" content="https://pseudos.art" />
-        <meta property="og:image" content="/media/img/background/base.jpg" />
+        <meta property="og:image" content="https://pseudos.art/media/img/background/base.jpg" />
         <meta property="og:image:alt" content="Texto Alternativo da Imagem" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Coletivo de Pseudoartistas | Floresta Azul - BA" />
         <meta name="twitter:description" content="O site oficial do primeiro coletivo de artes de Floresta Azul." />
-        <meta name="twitter:image" content="/media/img/background/base.jpg" />
+        <meta name="twitter:image" content="https://pseudos.art/media/img/background/base.jpg" />
         <meta name="twitter:image:alt" content="Texto Alternativo da Imagem" />
       </head>
       <body className={inter.className}>{children}</body>

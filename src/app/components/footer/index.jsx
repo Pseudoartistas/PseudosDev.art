@@ -11,16 +11,16 @@ export default function Footer() {
 				<span>Todos os direitos reservados.&nbsp;</span>
 			</div>
 			<div className="flex flex-row gap-4">
-				<a href="" className="group rounded-sm px-1 py-1 uppercase hover:font-black colorsBase hoverButton">
+				<a href="https://github.com/Pseudoartistas/" className="group rounded-sm px-1 py-1 uppercase hover:font-black colorsBase hoverButton">
 					<Icons.Github></Icons.Github>
 				</a>
-				<a href="" className="group rounded-sm px-1 py-1 uppercase hover:font-black colorsBase hoverButton">
+				<a href="https://www.threads.net/pseudos.art" className="group rounded-sm px-1 py-1 uppercase hover:font-black colorsBase hoverButton">
 					<Icons.Threads></Icons.Threads>
 				</a>
 				<a href="https://www.instagram.com/pseudos.art/" className="group rounded-sm px-1 py-1 uppercase hover:font-black colorsBase hoverButton">
 					<Icons.Instagram></Icons.Instagram>
 				</a>
-				<a href="" className="group rounded-sm px-1 py-1 uppercase  hover:font-black colorsBase hoverButton">
+				<a href="#" className="disabled group rounded-sm px-1 py-1 uppercase  hover:font-black colorsBase hoverButton">
 					<Icons.Facebook></Icons.Facebook>
 				</a>
 			</div>

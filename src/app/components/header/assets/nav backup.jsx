@@ -29,17 +29,17 @@ export default function Nav() {
 							</ActiveLink>
 						</NavigationMenu.Item>
 						<NavigationMenu.Item>
-							<ActiveLink className="disabled transitionNav nav-link hoverButton rounded-sm px-3 py-1 uppercase hover:font-black" href="/equipe" data-text="Equipe">
+							<ActiveLink className="transitionNav nav-link hoverButton rounded-sm px-3 py-1 uppercase hover:font-black" href="/equipe" data-text="Equipe">
 								Equipe
 							</ActiveLink>
 						</NavigationMenu.Item>
 						<NavigationMenu.Item>
-							<ActiveLink className="disabled transitionNav nav-link hoverButton rounded-sm px-3 py-1 uppercase hover:font-black" href="/blog" data-text="Blog">
+							<ActiveLink className="transitionNav nav-link hoverButton rounded-sm px-3 py-1 uppercase hover:font-black" href="/blog" data-text="Blog">
 								Blog
 							</ActiveLink>
 						</NavigationMenu.Item>
 						<NavigationMenu.Item>
-							<NavigationMenu.Trigger className="disabled group flex items-center gap-1 rounded-sm px-3 py-1 hoverButton aria-expanded:font-black aria-expanded:bg-neutral-900/5 dark:aria-expanded:bg-neutral-50/5">
+							<NavigationMenu.Trigger className="group flex items-center gap-1 rounded-sm px-3 py-1 hoverButton aria-expanded:font-black aria-expanded:bg-neutral-900/5 dark:aria-expanded:bg-neutral-50/5">
 								<ActiveLink className="transitionNav nav-link !select-text uppercase hover:font-black" href="/projetos" data-text="Projetos">
 									Projetos
 								</ActiveLink>
@@ -50,10 +50,10 @@ export default function Nav() {
 									<ul className="animate-enterFromTop grid grid-flow-col grid-rows-3 gap-5 overflow-x-scroll p-5 max-md:grid-flow-row max-md:w-full max-md:overflow-y-scroll">
 										<li className="row-span-3">
 											<NavigationMenu.Link asChild className="w-full h-full max-md:min-w-full min-w-80 max-md:min-h-64">
-												<a href="/" className="flex flex-col justify-end items-start rounded-lg bg-gradient-to-b from-muted/50 to-muted p-5 max-md:pointer-events-none">
-													<Logos.LogoPseudoVH />
-													<span className="text-sm line-clamp-2 w-2/3 font-bold">Manifesto do coletivo</span>
-													<p className="text-xs line-clamp-3 w-2/3">O coletivo de arte "Pseudoartistas" surge como uma resposta à necessidade urgente de redefinir e expandir a compreensão da arte em uma pequena cidade do interior. Em um contexto de modernidade líquida e resistência às formas de arte que desafiam as crenças estabelecidas, o coletivo busca promover a diversidade artística, a reflexão crítica e a transformação social através da colaboração mútua, intervenções artísticas, oficinas de arte e diálogo social. Com um manifesto artístico que desafia as convenções e valoriza a expressão criativa, o coletivo busca criar um ambiente cultural inclusivo e empoderar artistas de todas as modalidades.</p>
+												<a href="/" className="flex flex-col items-start justify-end rounded-lg bg-gradient-to-b from-muted/50 to-muted p-5 max-md:pointer-events-none">
+													<Logos.LogoANotaVH />
+													<span className="text-sm line-clamp-2 w-2/3 font-bold">A Nota</span>
+													<p className="text-xs line-clamp-3 w-2/3">Projeto de divulgação poética e cultural com cartazes em lambe-lambe.</p>
 												</a>
 											</NavigationMenu.Link>
 										</li>
@@ -69,7 +69,7 @@ export default function Nav() {
 										<ListItem href="/projetos/anota" title="A Nota">
 											Projeto de divulgação poética e cultural com cartazes em lambe-lambe.
 										</ListItem>
-										<div className={`disabled group flex h-fit flex-row justify-between gap-3 ${subMenu_OficinasIsOpen ? 'srolocBaseTransparency hoverButton rounded-lg' : ''}`}>
+										<div className={`group flex h-fit flex-row justify-between gap-3 ${subMenu_OficinasIsOpen ? 'srolocBaseTransparency hoverButton rounded-lg' : ''}`}>
 											<ListItem href="/projetos/pseudos/oficinas" title="Oficinas">
 												Oficinas ministradas pelos membros do coletivo.
 											</ListItem>
@@ -108,7 +108,7 @@ export default function Nav() {
 const ListItem = React.forwardRef(({ className, children, title, ...props }, forwardedRef) => (
 	<li>
 		<NavigationMenu.Link asChild>
-			<ActiveLink className={classNames(' disabled hoverButton line-clamp-none w-full min-w-64 max-w-80 h-20 items-center rounded-lg p-3 text-base no-underline transition-colors', className)} {...props} ref={forwardedRef}>
+			<ActiveLink className={classNames('hoverButton line-clamp-none w-full min-w-64 max-w-80 h-20 items-center rounded-lg p-3 text-base no-underline transition-colors', className)} {...props} ref={forwardedRef}>
 				<div className="line-clamp-1 text-sm font-semibold uppercase">{title}</div>
 				<p className="line-clamp-2 hyphens-auto text-justify text-xs [word-spacing:-1px]">{children}</p>
 			</ActiveLink>

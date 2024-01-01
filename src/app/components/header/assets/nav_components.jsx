@@ -33,7 +33,7 @@ export function MenuHamburguer({ ...props }) {
 				</button>
 			</Popover.Trigger>
 			<Popover.Portal>
-				<Popover.Content sideOffset={-58} className="z-40 flex h-screen w-screen flex-col items-center gap-5 px-5 py-5 text-sm colorsBase">
+				<Popover.Content className="z-40 flex h-screen w-screen flex-col items-center gap-5 px-5 py-5 text-sm colorsBase relative -top-[58px] md:!-top-0 !bg-orange-500">
                     <div className='flex flex-row justify-between items-center w-full pb-5'>
                         <Popover.Close className="h-8 w-8 invisible" aria-label="Close">
                             <Icons.CloseAni/>
@@ -44,31 +44,31 @@ export function MenuHamburguer({ ...props }) {
                         </Popover.Close>
                     </div>
 
-                    <div className="hoverButton group relative  z-40 flex h-20 w-2/3 flex-col items-start justify-end overflow-hidden rounded-lg bg-[url('/media/img/background/anota.png')] px-5 py-3 uppercase text-neutral-50 before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:bg-[radial-gradient(circle_at_10%_100%,_rgba(23,23,23,1)_0%,_rgba(23,23,23,0.875770376509979)_19%,_rgba(0,0,0,0)_100%)] hover:font-black">
+                    <div className="hoverButton group relative z-40 flex h-20 w-2/3 flex-col items-start justify-end overflow-hidden rounded-lg bg-[url('/media/img/background/base.jpg')] px-5 py-3 uppercase text-neutral-50 before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:bg-[radial-gradient(circle_at_10%_100%,_rgba(23,23,23,1)_0%,_rgba(23,23,23,0.875770376509979)_19%,_rgba(0,0,0,0)_100%)] hover:font-black bg-center bg-cover">
                         <ActiveLink className="transitionNav nav-link hoverButton rounded-sm px-3 py-1 uppercase hover:font-black" href="/" data-text="Início">
                             Início
                         </ActiveLink>
                     </div>
 
-                    <div className="hoverButton group relative  z-40 flex h-20 w-2/3 flex-col items-start justify-end overflow-hidden rounded-lg bg-[url('/media/img/background/anota.png')] px-5 py-3 uppercase text-neutral-50 before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:bg-[radial-gradient(circle_at_10%_100%,_rgba(23,23,23,1)_0%,_rgba(23,23,23,0.875770376509979)_19%,_rgba(0,0,0,0)_100%)] hover:font-black">
+                    <div className="hoverButton group relative  z-40 flex h-20 w-2/3 flex-col items-start justify-end overflow-hidden rounded-lg bg-[url('/media/img/misc/assets/manifesto_banner.png')] px-5 py-3 uppercase text-neutral-50 before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:bg-[radial-gradient(circle_at_10%_100%,_rgba(23,23,23,1)_0%,_rgba(23,23,23,0.875770376509979)_19%,_rgba(0,0,0,0)_100%)] hover:font-black bg-center bg-cover">
                         <ActiveLink className="transitionNav nav-link hoverButton rounded-sm px-3 py-1 uppercase hover:font-black" href="/manifesto" data-text="Manifesto">
                             Manifesto
                         </ActiveLink>
                     </div>
 
-                    <div className="hoverButton group relative  z-40 flex h-20 w-2/3 flex-col items-start justify-end overflow-hidden rounded-lg bg-[url('/media/img/background/anota.png')] px-5 py-3 uppercase text-neutral-50 before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:bg-[radial-gradient(circle_at_10%_100%,_rgba(23,23,23,1)_0%,_rgba(23,23,23,0.875770376509979)_19%,_rgba(0,0,0,0)_100%)] hover:font-black">
+                    <div className="disabled hoverButton group relative  z-40 flex h-20 w-2/3 flex-col items-start justify-end overflow-hidden rounded-lg bg-[url('/media/img/background/_base.jpg')] px-5 py-3 uppercase text-neutral-50 before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:bg-[radial-gradient(circle_at_10%_100%,_rgba(23,23,23,1)_0%,_rgba(23,23,23,0.875770376509979)_19%,_rgba(0,0,0,0)_100%)] hover:font-black bg-center bg-cover">
                         <ActiveLink className="transitionNav nav-link hoverButton rounded-sm px-3 py-1 uppercase hover:font-black" href="/equipe" data-text="Equipe">
                             Equipe
                         </ActiveLink>
                     </div>
 
-                    <div disabled className="hoverButton group relative  z-40 flex h-20 w-2/3 flex-col items-start justify-end overflow-hidden rounded-lg bg-[url('/media/img/background/anota.png')] px-5 py-3 uppercase text-neutral-50 before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:bg-[radial-gradient(circle_at_10%_100%,_rgba(23,23,23,1)_0%,_rgba(23,23,23,0.875770376509979)_19%,_rgba(0,0,0,0)_100%)] hover:font-black">
+                    <div disabled className="disabled hoverButton group relative  z-40 flex h-20 w-2/3 flex-col items-start justify-end overflow-hidden rounded-lg bg-[url('/media/img/background/_base.jpg')] px-5 py-3 uppercase text-neutral-50 before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:bg-[radial-gradient(circle_at_10%_100%,_rgba(23,23,23,1)_0%,_rgba(23,23,23,0.875770376509979)_19%,_rgba(0,0,0,0)_100%)] hover:font-black bg-center bg-cover">
                         <ActiveLink className="transitionNav nav-link hoverButton rounded-sm px-3 py-1 uppercase hover:font-black" href="/blog" data-text="Blog">
                             Blog
                         </ActiveLink>
                     </div>
 
-                    <div disabled className="hoverButton group relative  z-40 flex h-20 w-2/3 flex-col items-start justify-end overflow-hidden rounded-lg bg-[url('/media/img/background/anota.png')] px-5 py-3 uppercase text-neutral-50 before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:bg-[radial-gradient(circle_at_10%_100%,_rgba(23,23,23,1)_0%,_rgba(23,23,23,0.875770376509979)_19%,_rgba(0,0,0,0)_100%)] hover:font-black">
+                    <div disabled className="disabled hoverButton group relative  z-40 flex h-20 w-2/3 flex-col items-start justify-end overflow-hidden rounded-lg bg-[url('/media/img/background/_base.jpg')] px-5 py-3 uppercase text-neutral-50 before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:bg-[radial-gradient(circle_at_10%_100%,_rgba(23,23,23,1)_0%,_rgba(23,23,23,0.875770376509979)_19%,_rgba(0,0,0,0)_100%)] hover:font-black bg-center bg-cover">
                         <ActiveLink className="transitionNav nav-link hoverButton rounded-sm px-3 py-1 uppercase hover:font-black" href="/projetos">
                             Projetos
                         </ActiveLink>

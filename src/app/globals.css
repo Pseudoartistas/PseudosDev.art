@@ -40,6 +40,9 @@
   @apply data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft
 }
 
+.disabled {
+  @apply !text-neutral-400 dark:!text-neutral-600 pointer-events-none
+}
 
 
 
