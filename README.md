@@ -1,5 +1,6 @@
 To do List
 
-- [ ] Migrar para Metadata API
+- [x] Migrar para Metadata API;
+- [ ] Terminar o metadada do windows 10;
 - [ ] Automatizar os metadados;
 - [ ] Refatorar componentes;
