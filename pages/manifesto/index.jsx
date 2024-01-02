@@ -14,21 +14,21 @@ export default function manifesto() {
 		<main className="min-w-screen colorsBase flex min-h-screen flex-col overflow-x-hidden px-5 md:px-16 lg:px-24">
 			<Header />
 			<section>
-				<main className="flex min-h-screen flex-col items-center justify-between">
-					<article className="flex h-full w-full flex-col gap-3 text-base px-20 max-md:px-2 py-10">
-						<div className="flex flex-col justify-center gap-3">
-							<span className="text-center text-xs">Documento interno | Organização</span>
-							<h1 className={`text-center text-2xl font-black ${lora.className}`}>Pseudo Manifesto - Virada Cultural Florestense</h1>
-							<div className="flex w-full flex-row justify-center gap-3">
-								<div className="relative aspect-square h-10">
-									<Image src="/media/img/logos/logo_PB.png" fill alt="Autor" className="rounded-full object-cover" />
-								</div>
-								<div className="flex flex-col justify-center">
-									<span className="text-sm font-medium">Fundadores | Edvaldo Brito e Lorrayne Lira</span>
-									<span className="text-xs font-thin">27 de outubro de 2023, 16:51</span>
-								</div>
+				<main className="flex min-h-screen flex-col items-center justify-between gap-3 py-5">
+					<div className="flex flex-col justify-center gap-3">
+						<span className="text-center text-xs">Documento interno | Organização</span>
+						<h1 className={`text-center text-2xl font-black ${lora.className}`}>Pseudo Manifesto - Virada Cultural Florestense</h1>
+						<div className="flex w-full flex-row justify-center gap-3">
+							<div className="relative aspect-square h-10">
+								<Image src="/media/img/logos/logo_PB.png" fill alt="Autor" className="rounded-full object-cover" />
+							</div>
+							<div className="flex flex-col justify-center">
+								<span className="text-sm font-medium">Fundadores | Edvaldo Brito e Lorrayne Lira</span>
+								<span className="text-xs font-thin">27 de outubro de 2023, 16:51</span>
 							</div>
 						</div>
+					</div>
+					<article className="flex h-full w-full flex-col gap-3 text-base px-20 max-md:px-2 py-5">
 						<div className="relative aspect-video h-80">
 							<Image src="/media/img/misc/assets/manifesto_banner.png" fill alt="Autor" className="rounded-lg object-cover" />
 						</div>
