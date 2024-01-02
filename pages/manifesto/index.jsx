@@ -15,7 +15,7 @@ export default function manifesto() {
 			<Header />
 			<section>
 				<main className="flex min-h-screen flex-col items-center justify-between">
-					<article className="flex h-full w-full flex-col gap-3 text-base px-20 max-md:px-5 py-10">
+					<article className="flex h-full w-full flex-col gap-3 text-base px-20 max-md:px-2 py-10">
 						<div className="flex flex-col justify-center gap-3">
 							<span className="text-center text-xs">Documento interno | Organização</span>
 							<h1 className={`text-center text-2xl font-black ${lora.className}`}>Pseudo Manifesto - Virada Cultural Florestense</h1>
