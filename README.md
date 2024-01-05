@@ -2,7 +2,7 @@ To do List - Reconstrução
 
 - [x] Arrumar o projeto
 - [x] Criar a home e pelo menos uma página funcional
-- [ ] Implementar o blog
+- [x] Implementar o blog
 - [ ] Criar sistema de metadados
 - [ ] Criar OpenGraph
 

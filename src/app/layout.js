@@ -1,5 +1,5 @@
 import './globals.css'
-import { inter } from '../styles/fonts'
+import { inter, lora } from '../styles/fonts'
 
 export const metadata = {
   title: 'Coletivo de Pseudoartistas',
