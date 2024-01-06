@@ -1,0 +1,19 @@
+{
+    "name": "Coletivo de Pseudoartistas",
+    "short_name": "Coletivo de Pseudoartistas",
+    "icons": [
+        {
+            "src": "/media/img/logos/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/media/img/logos/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#fafafa",
+    "background_color": "#fafafa",
+    "display": "standalone"
+}

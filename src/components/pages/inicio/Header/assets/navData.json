@@ -1,0 +1,90 @@
+{
+    "Nav": [
+        {
+            "nome": "Início",
+            "href": "/",
+            "subItens": []
+        },
+        {
+            "nome": "Equipe",
+            "href": "/sobre/equipe",
+            "subItens": []
+        },
+        {
+            "nome": "Manifesto",
+            "href": "/sobre/Manifesto",
+            "subItens": []
+        },
+        {
+            "nome": "Projetos",
+            "href": "/projetos",
+            "subItens": [
+                {
+                    "logo": "LogoRodasVH",
+                    "nome": "Rodas de conversa",
+                    "href": "/projetos/pseudos/rodas",
+                    "descricao": "Reuniões com membros ativos do coletivo. Discussões e reflexões.",
+                    "destaque": false,
+                    "subItens": []
+                },
+                {
+                    "logo": "LogoMeetVH",
+                    "nome": "Todo piso será palco",
+                    "href": "/projetos/pseudos/meet",
+                    "descricao": "Eventos públicos organizados pelos membros do coletivo. Apresentação dos trabalhos da guilda de literatura e Culminação do projeto \"A Nota\".",
+                    "destaque": false,
+                    "subItens": []
+                },
+                {
+                    "logo": "LogoExpoVH",
+                    "nome": "Decorando o mobiliário urbano",
+                    "href": "/projetos/pseudos/expo",
+                    "descricao": "Exposições públicas das orbras produzidas pelos membros do coletivo.",
+                    "destaque": false,
+                    "subItens": []
+                },
+                {
+                    "logo": "LogoANotaVH",
+                    "nome": "A Nota",
+                    "href": "/projetos/anota",
+                    "descricao": "Projeto de divulgação poética e cultural com cartazes em lambe-lambe.",
+                    "destaque": true,
+                    "subItens": []
+                },
+                {
+                    "logo": "LogoOficinasVH",
+                    "nome": "Oficinas",
+                    "href": "/projetos/pseudos/oficinas",
+                    "descricao": "Oficinas ministradas pelos membros do coletivo.",
+                    "destaque": false,
+                    "subItens": [
+                        {
+                            "logo": "LogoOficinasVH",
+                            "nome": "Poesia de rasura",
+                            "href": "/projetos/pseudos/oficinas/PDR",
+                            "descricao": "Poesia de retalhos, poesia de rasura ou no inglês “Blackout Poetry” é um tipo de...",
+                            "destaque": false,
+                            "subItens": []
+                        },
+                        {
+                            "logo": "LogoOficinasVH",
+                            "nome": "Corpo expressivo",
+                            "href": "/projetos/pseudos/oficinas/CEX",
+                            "descricao": "Estudos do corpo como ferramenta de expressão e comunicação",
+                            "destaque": false,
+                            "subItens": []
+                        },
+                        {
+                            "logo": "LogoOficinasVH",
+                            "nome": "Beijando a cidade",
+                            "href": "/projetos/pseudos/oficinas/BAC",
+                            "descricao": "Viagem pela história da poesia de rua e exercício de sua prática como forma de expressão política e social.",
+                            "destaque": false,
+                            "subItens": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

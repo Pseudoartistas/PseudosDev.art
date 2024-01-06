@@ -1,31 +1,36 @@
-'use client'
-
-import { useEffect, useState } from 'react';
 import Article from '../../../components/pages/blog/Article';
+import * as blog from '../../../components/utilities/postagensBlog';
+import urlBase from '../../../components/utilities/urlBase';
 
+/* export async function generateStaticParams() {
+  const consulta = await fetch(`${urlBase()}/api/blog/posts`);
+  const tipoConteudo = consulta.headers.get('Content-Type');
 
-export default function SinglePost({params}) {
-  const origin = typeof window !== 'undefined' && window.location.origin ? window.location.origin : '';
-  const [post, setPost] = useState(null);
+  if (tipoConteudo && tipoConteudo.includes('application/json')) {
+    const { postagens } = await consulta.json();
+    const indice = await postagens.map((postagem) => ({
+      id: postagem.id,
+    }))
+    // console.log(indice);
+    return indice
+  } else {
+    console.error('Tipo de conteúdo invalido da resposta da api');
+  }  
+} */
 
-  const fetchPost = async (id) => {
-    const url = `${origin}/api/postsData/${id}`;
-    
-    try {
-      const res = await fetch(url);
-      const { post } = await res.json();
-      post && setPost(post);
-    } catch (error) {
-      console.error('Error fetching post:', error);
-    }
-  };
+export async function generateStaticParams() {
+  const postagens = await blog.todosPosts();
+  const indice = await postagens.map((postagem) => ({
+    id: postagem.id,
+  }))
+  // console.log(indice);
+  return indice
+}
 
-  useEffect(() => {
-    fetchPost(params.id);
-  }, [fetchPost, params.id]);
-  
-  
+export default async function BlogPost({params}) {
+  const { id } = params
+  const postagem = await blog.unicoPost(id)
   return (
-    post && <Article data={post}></Article>
+    postagem && <Article data={ postagem }></Article>
   )
 }

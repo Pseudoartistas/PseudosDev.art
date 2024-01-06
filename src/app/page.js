@@ -1,6 +1,9 @@
+import Carousel from '../components/pages/inicio/Carousel';
+
 export default function Home() {
-  return (
-    <span>Olá mundo!</span>
-    
-  )
+	return (
+		<section>
+			<Carousel/>
+		</section>
+	);
 }

@@ -3,6 +3,10 @@ To do List - Reconstrução
 - [x] Arrumar o projeto
 - [x] Criar a home e pelo menos uma página funcional
 - [x] Implementar o blog
+    - [ ] Arrumar a renderização das páginas estáticas
+- [ ] Melhorar o design da not-found
+- [ ] Adicionar outras páginas de erros
+- [ ] Dinamizar o carrossel 
 - [ ] Criar sistema de metadados
 - [ ] Criar OpenGraph
 

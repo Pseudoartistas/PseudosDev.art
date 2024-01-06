@@ -1,21 +1,20 @@
 import Link from 'next/link';
+import * as blog from '../../components/utilities/postagensBlog';
 
-export default async function PostsPage() {
-  const res = await fetch('/api/postsData');
-  const { posts } = await res.json()
+export default async function Blog() {
+  const postagens = await blog.todosPosts();
 
   return (
     <div>
-      <h1>All Blog Posts</h1>
-      <hr style={{ width: '220px' }} />
-
-      <div style={{ paddingTop: '40px' }}>
-        {posts.map(post => (
-          <article key={post.id}>
-            <Link href={`posts/${post.id}`}>
-              <h2>{post.title}</h2>
+      <h1>Todas as postagens</h1>
+      <hr/>
+      <div>
+        {postagens.map(postagem => (
+          <article key={postagem.id}>
+            <Link href={`blog/${postagem.id}`}>
+              <h2>{postagem.titulo}</h2>
             </Link>
-            <p style={{ paddingBottom: '30px'}}>{post.body}</p>
+            <p>{postagem.descricao}</p>
           </article>
         ))}
       </div>
