@@ -122,9 +122,9 @@ export default function manifesto() {
 								</div>
 								<div className="flex flex-col justify-center">
 									<span className="text-sm font-medium">Fundador | Edvaldo Brito</span>
-									<span className="text-xs font-thin">Revisado por Lorrayne Lira</span>
 									<span className="text-xs font-thin">27 de outubro de 2023, 16:51</span>
 								</div>
+								<span className="text-xs font-thin">Revisado por Lorrayne Lira</span>
 							</div>
 						</div>
 						<article className="flex h-full w-full flex-col gap-3 text-base px-20 max-md:px-2 py-5">
