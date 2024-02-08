@@ -113,7 +113,7 @@ export default function manifesto() {
 				<Header />
 				<section>
 					<main className="flex min-h-screen flex-col items-center justify-between gap-3 py-5">
-						<div className="flex flex-col justify-center gap-3">
+						<div className="flex flex-col justify-center items-center gap-3">
 							<span className="text-center text-xs">Documento interno | Organização</span>
 							<h1 className={`text-center text-2xl font-black ${lora.className}`}>Pseudo Manifesto - Virada Cultural Florestense</h1>
 							<div className="flex w-full flex-row justify-center gap-3">
