@@ -121,7 +121,8 @@ export default function manifesto() {
 									<Image src="/media/img/logos/logo_PB.png" fill alt="Autor" className="rounded-full object-cover" />
 								</div>
 								<div className="flex flex-col justify-center">
-									<span className="text-sm font-medium">Fundadores | Edvaldo Brito e Lorrayne Lira</span>
+									<span className="text-sm font-medium">Fundador | Edvaldo Brito</span>
+									<span className="text-xs font-thin">Revisado por Lorrayne Lira</span>
 									<span className="text-xs font-thin">27 de outubro de 2023, 16:51</span>
 								</div>
 							</div>
